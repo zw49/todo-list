@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button-styles {
+    @apply bg-gray-800 text-white font-mono font-extrabold rounded-md hover:bg-gray-500 shadow-md
+}
