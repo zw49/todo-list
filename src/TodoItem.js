@@ -1,6 +1,7 @@
 const TodoItem = (props) => {
-  const handleCheck = (event) => {
-    console.log(event.target.checked);
+  const handleCheck = ({target: {checked}}) => {
+      props.itemCompleted(checked, props.id)
+
   };
   return (
     <div className="rounded-md bg-gray-500 shadow-md h-14 w-full mb-5 items-center flex justify-start p-3">
